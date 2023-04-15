@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    container_name: minecraft_server
+    ports:
+    - "25565:25565"
+    environment:
+      EULA: "true"
+      OVERRIDE_SERVER_PROPERTIES: "false"
+      SKIP_SERVER_PROPERTIES: "true"
+      TYPE: FORGE
+      DEBUG: "true"
+      VERSION: "1.19.2"
+      FORGE_VERSION: "43.1.43"
+      INIT_MEMORY: 2G
+      MAX_MEMORY: 8G
+    volumes:
+    - mc_forge:/data
+    - ./mods:/mods:ro
+    - ./server.properties:/data/server.properties
+
+volumes:
+  mc_forge: {}
