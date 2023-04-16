@@ -19,7 +19,15 @@ services:
     volumes:
     - mc_forge:/data
     - ./mods:/mods:ro
+    - ./config:/data/config
+    - ./defaultconfigs:/data/defaultconfigs
+    - ./packmenu:/data/kubejs
+    - ./packmenu:/data/packmenu
     - ./server.properties:/data/server.properties
+    - ./server-icon.png:/data/server-icon.png
+    - ./authlib-injector-1.2.2.jar:/data/authlib-injector-1.2.2.jar
+    - ./run.bat:/data/run.bat:ro
+    - ./run.sh:/data/run.sh:ro
 
 volumes:
   mc_forge: {}
