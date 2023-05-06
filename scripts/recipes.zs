@@ -19,6 +19,9 @@ craftingTable.addShapeless("copper_wire", <item:ftbic:copper_wire>, [<item:ic2:c
 craftingTable.addShapeless("ingot_refined_iron", <item:ic2:ingot_refined_iron>, [<item:ftbic:industrial_grade_metal>]);
 craftingTable.addShapeless("industrial_grade_metal", <item:ftbic:industrial_grade_metal>, [<item:ic2:ingot_refined_iron>]);
 
+craftingTable.addShapeless("uranium_ingot", <item:ftbic:uranium_ingot>, [<item:ic2:ingot_refined_iron>]);
+craftingTable.addShapeless("ingot_uranium", <item:ic2:ingot_uranium>, [<item:ftbic:uranium_ingot>]);
+
 // recipes.addShaped(<minecraft:iron_leggings>,
 // [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
 //  [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
